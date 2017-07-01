@@ -69,14 +69,6 @@ void Add(Node** headRef, int newData){
       }
 }
 
-void displayll(Node* head){
-
-//current=head;
-//while (current!= NULL) {
-//current = current->next;
-//printf("%d",current->data);}
-}
-
 int Count(Node* head,int num){
   Node* current;
   int count=0;
