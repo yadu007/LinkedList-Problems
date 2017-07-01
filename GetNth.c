@@ -35,6 +35,7 @@ Node* BuildOneTwoThree(){
     {
        Add(&head,i);
     }
+  
   return(head);
 }
 
@@ -66,14 +67,6 @@ void Add(Node** headRef, int newData){
     // current->next->data=newData;
      //current->next->next=NULL;
       }
-}
-
-void displayll(Node* head){
-
-//current=head;
-//while (current!= NULL) {
-//current = current->next;
-//printf("%d",current->data);}
 }
 
 int Count(Node* head,int num){
