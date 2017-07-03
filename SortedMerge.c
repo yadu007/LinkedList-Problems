@@ -12,13 +12,8 @@ void InsertSort(Node** headRef);
 void MoveNode(Node** destRef,Node** sourceRef);
 Node* SortedMerge(Node* a, Node* b)
 {
-   
     Node dummy;
- 
-    
     Node* tail = &dummy;
- 
-    
     dummy.next = NULL;
     while (1)
     {
@@ -42,42 +37,26 @@ Node* SortedMerge(Node* a, Node* b)
     }
     return(dummy.next);
 }
- 
 
 void MoveNode(Node** destRef, Node** sourceRef)
 {
    
     Node* newNode = *sourceRef;
     assert(newNode != NULL);
- 
-    
     *sourceRef = newNode->next;
- 
-    
     newNode->next = *destRef;
- 
-    
     *destRef = newNode;
 }
  
- 
-
 void push(Node** head_ref, int new_data)
 {
     Node* new_node =
         (Node*) malloc(sizeof(Node));
- 
-    
-    new_node->data  = new_data;
- 
-   
-    new_node->next = (*head_ref);
- 
-    
+        new_node->data  = new_data;
+     new_node->next = (*head_ref);
     (*head_ref)    = new_node;
 }
  
-
 void printList(Node *node)
 {
     while (node!=NULL)
