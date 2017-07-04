@@ -47,7 +47,7 @@ int main()
 
   Node* a = NULL;
   Node* b = NULL;
-  Node *intersect = NULL;
+  Node *reverse = NULL;
   
   push(&a, 6);
   push(&a, 5);
